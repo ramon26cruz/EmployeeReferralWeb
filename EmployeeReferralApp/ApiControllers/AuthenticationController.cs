@@ -36,7 +36,12 @@ namespace EmployeeReferralApp.ApiControllers
             var jwtToken = _tokenGenerator.GenerateFor(user.UserName);
             // get current project
             // look up will be based on the current project
-            return Ok("1");
+            return Ok(new AuthenticationOutputModel
+            {
+                Id = user.Id,
+                Name = user.UserName,
+                JWTToken = jwtToken,
+            });
         }
     }
 

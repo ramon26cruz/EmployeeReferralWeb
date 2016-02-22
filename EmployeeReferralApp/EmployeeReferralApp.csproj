@@ -201,6 +201,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="AutofacModules\ConfigurationModule.cs" />
     <Compile Include="AutofacModules\DatabaseModule.cs" />
     <Compile Include="AutofacModules\InfrastructureModule.cs" />
     <Compile Include="AutofacModules\MvcModule.cs" />
@@ -226,6 +227,7 @@
     <Compile Include="Infrastructure\Services\JWTTokenGenerator.cs" />
     <Compile Include="IoC.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AuthenticationOutputModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
